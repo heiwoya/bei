@@ -30,9 +30,17 @@ let cookiesArr = [], cookie = '', jdPetShareArr = [], isBox = false, notify, new
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'MTAxODc2NTE0NzAwMDAwMDAwNjI1NTU0Nw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=',
+'MTAxODc2NTE0NzAwMDAwMDAwNjI1NTU0Nw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=@MTE1NDUyMjEwMDAwMDAwNDQxODg1Mjk=@MTE1NDQ5MzYwMDAwMDAwNDQxOTE4MjU=',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'MTAxODc2NTEzMzAwMDAwMDAyNjQ5NDA5Mw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=',
+'MTAxODc2NTEzMzAwMDAwMDAyNjQ5NDA5Mw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=@MTE1NDUyMjEwMDAwMDAwNDQxODg1Mjk=@MTE1NDQ5MzYwMDAwMDAwNDQxOTE4MjU=',
+  //账号三的好友shareCode,不同好友的shareCode中间用@符号隔开
+'MTAxODc2NTEzMzAwMDAwMDAyNjQ5NDA5Mw==@MTAxODc2NTE0NzAwMDAwMDAwNjI1NTU0Nw==@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=@MTE1NDUyMjEwMDAwMDAwNDQxODg1Mjk=@MTE1NDQ5MzYwMDAwMDAwNDQxOTE4MjU=',
+  //账号四的好友shareCode,不同好友的shareCode中间用@符号隔开
+'MTAxODc2NTEzMzAwMDAwMDAyNjQ5NDA5Mw==@MTAxODc2NTE0NzAwMDAwMDAwNjI1NTU0Nw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDUyMjEwMDAwMDAwNDQxODg1Mjk=@MTE1NDQ5MzYwMDAwMDAwNDQxOTE4MjU=',
+  //账号五的好友shareCode,不同好友的shareCode中间用@符号隔开
+'MTAxODc2NTEzMzAwMDAwMDAyNjQ5NDA5Mw==@MTAxODc2NTE0NzAwMDAwMDAwNjI1NTU0Nw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=@MTE1NDQ5MzYwMDAwMDAwNDQxOTE4MjU=',
+  //账号六的好友shareCode,不同好友的shareCode中间用@符号隔开
+'MTAxODc2NTEzMzAwMDAwMDAyNjQ5NDA5Mw==@MTAxODc2NTE0NzAwMDAwMDAwNjI1NTU0Nw==@MTE1NDAxNzYwMDAwMDAwMzc0OTk4MjE=@MTE1NDQ5OTIwMDAwMDAwMzc1MDA0MDE=@MTE1NDUyMjEwMDAwMDAwNDQxODg1Mjk=',
 ]
 let message = '', subTitle = '', option = {};
 let jdNotify = false;//是否关闭通知，false打开通知推送，true关闭通知推送
